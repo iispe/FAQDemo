@@ -34,7 +34,7 @@
   }
 </style>
 
-<p class="answer" in:fade on:click={() => handlePrioClick(data)}>
+<p class="answer" in:fade on:click|once={() => handlePrioClick(data)}>
   {answer}
   <span id="upvote">(+) {data.prio}</span>
 </p>

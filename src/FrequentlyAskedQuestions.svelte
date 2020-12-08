@@ -54,7 +54,6 @@
   );
 
   const bumpPrio = (e) => {
-    console.log(e.detail);
     questionsAsked.map((q) => {
       if (q.id === e.detail) {
         q.prio += 1;
