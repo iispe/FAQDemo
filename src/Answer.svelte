@@ -30,10 +30,11 @@
   #upvote {
     font-weight: 300;
     cursor: pointer;
+    min-width: 50px;
   }
 </style>
 
 <p class="answer" in:fade on:click={() => handlePrioClick(data)}>
   {answer}
-  <span id="upvote">(+)</span>
+  <span id="upvote">(+) {data.prio}</span>
 </p>
